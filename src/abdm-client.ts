@@ -1,3 +1,4 @@
+// Internal services - not exposed publicly
 import { M1Service } from './services/m1.service';
 import { M2Service } from './services/m2.service';
 import { M3Service } from './services/m3.service';
@@ -9,9 +10,9 @@ import { HttpClient } from './utils/http-client';
  */
 export class ABDMClient {
   private http: HttpClient;
-  public m1: M1Service;
-  public m2: M2Service;
-  public m3: M3Service;
+  private m1: M1Service;
+  private m2: M2Service;
+  private m3: M3Service;
 
   /**
    * Create a new ABDM client
