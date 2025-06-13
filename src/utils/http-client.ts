@@ -128,9 +128,7 @@ export class HttpClient {
   /**
    * Get the private key
    */
-  /**
-   * Get the private key
-   */
+  
   public get privateKey(): string | null {
     return this._privateKey;
   }
